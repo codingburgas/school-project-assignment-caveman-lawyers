@@ -4,7 +4,7 @@
 #include <Windows.h>
 using namespace std;
 
-bool onlyStarted = true;
+bool onlyStarted = true, textbooksOpened = false;
 bool examSit[5] = { 0, 0, 0, 0, 0 };
 float grades[5];
 string subject[5] = {"1. Mathematics", "2. Literature", "3. Programming", "4. English", "5. Deutsch"};
@@ -37,6 +37,15 @@ void youPassed()
 	}
 }
 
+void youFailed()
+{
+	cout << "I'm very sorry but you've failed. Good luck next time!\n\n";
+	if (textbooksOpened != true)
+	{
+		cout << "(hint - try reading next time :) )\n\n";
+	}
+}
+
 void menu()
 {
 	int input;
@@ -54,6 +63,11 @@ void menu()
 	if (grades[0] >= 3 && grades[1] >= 3 && grades[2] >= 3 && grades[3] >= 3 && grades[4] >= 3)
 	{
 		youPassed();
+		return;
+	}
+	else if (grades[0] <= 2 && grades[1] <= 2 && grades[2] <= 2 && grades[3] <= 2 && grades[4] <= 2)
+	{
+		youFailed();
 		return;
 	}
 	for (int i = 0; i < 5; i++)
@@ -108,6 +122,7 @@ void menu()
 	case 6:
 	{
 		cout << "\n\nIt's always good to review the knowledge and go on back again!";
+		textbooksOpened = true;
 		Sleep(2000);
 		system("cls");
 		break;
