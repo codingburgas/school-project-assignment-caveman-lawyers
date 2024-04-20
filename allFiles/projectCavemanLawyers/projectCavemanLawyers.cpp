@@ -7,4 +7,13 @@ using namespace std;
 int main()
 {
 	menu();
+	float average = returnAverageGrade();
+	if (average >= 3)
+	{
+		youPassed();
+	}
+	else
+	{
+		youFailed();
+	}
 }
