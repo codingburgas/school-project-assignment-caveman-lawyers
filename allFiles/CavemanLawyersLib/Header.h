@@ -3,3 +3,4 @@ void menu();
 float returnAverageGrade();
 void youPassed();
 void youFailed();
+class classes;
