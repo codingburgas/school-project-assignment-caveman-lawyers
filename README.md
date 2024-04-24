@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
 </head>
 <body>
-
+<img src="https://github.com/codingburgas/school-project-assignment-caveman-lawyers/blob/main/logoCavemanLawyers.png" width="250px" height="250px">
 <h1>School session quiz (AKA Izpit simulator)</h1>
-<img src="https://github.com/codingburgas/school-project-assignment-caveman-lawyers/blob/main/logoCavemanLawyers.png" width="150px" height="150px">
 <h2>Overview</h2>
 <p>This is a simple quiz application developed by a team of high school students for a school project.
 The School Session Quiz allows users to choose from different school subjects and answer multiple-choice questions. It provides immediate feedback on the correctness of the answers.</p>
