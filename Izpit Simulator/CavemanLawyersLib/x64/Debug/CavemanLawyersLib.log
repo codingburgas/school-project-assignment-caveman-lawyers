@@ -1,3 +1,2 @@
 ﻿  functions.cpp
-C:\Users\Admin\Downloads\school-project-assignment-caveman-lawyers\allFiles\CavemanLawyersLib\functions.cpp(137): warning C4715: makeCapital: значение возвращается не при всех путях выполнения
-  CavemanLawyersLib.vcxproj -> C:\Users\Admin\Downloads\school-project-assignment-caveman-lawyers\allFiles\x64\Debug\CavemanLawyersLib.lib
+  CavemanLawyersLib.vcxproj -> C:\Users\Admin\Downloads\school-project-assignment-caveman-lawyers\Izpit Simulator\x64\Debug\CavemanLawyersLib.lib

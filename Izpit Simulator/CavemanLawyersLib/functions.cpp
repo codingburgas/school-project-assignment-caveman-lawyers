@@ -134,6 +134,7 @@ class classes
 			ch -= 32;
 			return ch;
 		}
+		return ch;
 	}
 
 //return average grade
@@ -231,11 +232,6 @@ class classes
 	{
 		cout << "You passed! Congratulations! Your average is ";
 		// return your average grade
-		for (int i = 0; i < 4; i++)
-		{
-			averageGrade += theTest[i].returnGrades();
-		}
-		averageGrade /= 4;
 		cout << averageGrade << "!\n\n";
 		// shows the different messages, according to the grade gotten
 		if (averageGrade >= 3 && averageGrade <= 3.49)
@@ -292,6 +288,7 @@ class classes
 			{
 				averageGrade += theTest[i].returnGrades();
 			}
+			averageGrade /= 4;
 			return;
 		}
 		// writes name of school subject
@@ -375,16 +372,6 @@ class classes
 			system("cls");
 			menu();
 			break;
-		}
-		case 256:
-		{
-			// a cheat-code for testing purposes
-			cout << "You know, its not good to read the exam programm code, but fine...\n\n";
-			for (int i = 0; i < 4; i++)
-			{
-				theTest[i].changeExamSit(true);
-				theTest[i].changeGrades(6, false);
-			}
 		}
 		default:
 		{
